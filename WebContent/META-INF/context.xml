@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context path="/CloudServer" reloadable="true" >
+  <WatchedResource>WEB-INF/web.xml</WatchedResource>
+      <Resource name="devicesDS" 
+        auth="Container" 
+        type="javax.sql.DataSource" 
+        driverClassName="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://localhost:3306/devicedata?characterEncoding=utf8"
+        username="dvcDBMngr"
+        password="dvcDBMngr"
+        maxActive="100"
+        maxIdle="30"
+        maxWait="10000"    
+    />
+</Context>
